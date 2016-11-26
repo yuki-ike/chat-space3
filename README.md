@@ -1,24 +1,20 @@
-# README
+# chat-space
+**Database creation**
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* messages table
 
-Things you may want to cover:
+|body|image|group_id|user_id|
+|:--|:--|:--|:--|
+|text|string|integer|integer|
 
-* Ruby version
+* users table
 
-* System dependencies
+|name|email|password|
+|:--|:--|:--|
+|text|text|text|
 
-* Configuration
+* groups table
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+|name|user_id||
+|:--|:--|:--|
+|text|integer||
